@@ -80,7 +80,7 @@
 			include "dbconfig.php";
 			$db = mysqli_connect("$dbhost", "$dbuser", "$dbpass", "$dbname");
 			// set query
-			$query = "INSERT INTO score (username, score, playtime, photo) VALUES ('".$_COOKIE['username']."','".$_SESSION['score']."','".date('Y-m-d H:i:s')."','".$SESSION['filenameupload'].")";
+			$query = "INSERT INTO score (username, score, playtime, photos) VALUES ('".$_COOKIE['username']."','".$_SESSION['score']."','".date('Y-m-d H:i:s')."','".$SESSION['filenameupload'].")";
 			
 			//jalankan query
 			$result = mysqli_query($db, $query);
